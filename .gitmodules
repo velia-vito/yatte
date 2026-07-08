@@ -1,0 +1,9 @@
+[submodule "yatte_component_editor"]
+	path = yatte_component_editor
+	url = https://github.com/velia-vito/yatte_component_editor.git
+[submodule "yatte_component_database"]
+	path = yatte_component_database
+	url = https://github.com/velia-vito/yatte_component_database.git
+[submodule "yatte_app"]
+	path = yatte_app
+	url = https://github.com/velia-vito/yatte_app.git
