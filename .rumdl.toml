@@ -1,0 +1,7 @@
+[global]
+
+# Use Github flavor markdown
+flavor = "gfm"
+
+# Set global line length (used by MD013 and other line-length rules)
+line-length = 100
