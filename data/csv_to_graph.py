@@ -5,7 +5,7 @@ import pandas as pd
 from scipy.signal import savgol_filter
 
 # 1. Load and Clean
-df = pd.read_csv("1024_64_mk.csv", encoding="utf-16", skiprows=1)
+df = pd.read_csv("1024_2_measure_mk.csv", encoding="utf-8", skiprows=1)
 df.columns = df.columns.str.strip()
 
 df["words"] = pd.to_numeric(df["words"], errors="coerce")
@@ -64,7 +64,7 @@ for i, ms in enumerate(thresholds_ms):
 
 plt.xlabel("Word Count (N)")
 plt.ylabel("Latency (μs)")
-plt.title("Dart String Splitter: Latency Threshold Analysis", fontsize=14)
+plt.title("Dart Atom Measurement: Latency Threshold Analysis", fontsize=14)
 plt.legend(loc="upper left")
 plt.grid(True, which="both", linestyle=":", alpha=0.4)
 plt.tight_layout()

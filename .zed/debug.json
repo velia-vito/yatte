@@ -9,6 +9,12 @@
     "type": "dart",
     "request": "launch",
     "program": "$ZED_FILE",
-    "args": ["1024", "10"],
+  },
+  {
+    "label": "Flutter Current File (Dart)",
+    "adapter": "Dart",
+    "type": "flutter",
+    "request": "launch",
+    "program": "$ZED_FILE",
   },
 ]
