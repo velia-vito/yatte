@@ -3,34 +3,36 @@
 <!-- rumdl-disable-next-line MD033 -->
 <h1> <ins>Y</ins>et <ins>A</ins>nother <ins>T</ins>ex<ins>T</ins> <ins>E</ins>ditor </h1>
 
-__*Yatte is meant to be a simple, flexible, single-app solution to documenting, drafting, and revising
-your writing projects.*__
+**_Yatte is meant to be a simple, flexible, single-app solution to documenting, drafting, and revising
+your writing projects._**
 
 ## Technical Targets
 
-__General__
+**General**
 
-- [ ] Below 10ms keyboard-to-screen latency for all tasks.
+- [ ] Below 25ms Input-To-Frame latency for all tasks[^1].
 - [ ] Multi-platform.
 - [ ] Cross-device Sync.
 
-__Documentation__
+[^1]: See: [yatte_component_editor, Design History > 61f8c09f14e4 > #2](<https://github.com/velia-vito/yatte_component_editor/blob/master/Design History.md#Post-61f8c09f14e4>)
+
+**Documentation**
 
 - [ ] Simple cross-file / cross-section linking.
 - [ ] Support for merging cells in markdown tables.
 - [ ] Support for front/back links.
 - [ ] Queriable YAML based Metadata.
 
-__Drafting__
+**Drafting**
 
 - [ ] Contiguous file viewing (like in Scrivener3)
 - [ ] Multiplexed Workspace views.
 - [ ] Revision tracking.
 - [ ] First class support for `.docx` format.
-  - [ ] Export to `.docx`
-  - [ ] Import `.docx` including tracked changes & comment-threads.
+   - [ ] Export to `.docx`
+   - [ ] Import `.docx` including tracked changes & comment-threads.
 
-__Unconfirmed Additions__
+**Unconfirmed Additions**
 
 - [ ] Plug-in based extensibility.
 
@@ -80,14 +82,14 @@ repository cloning and updating this repository.
    ```
 
 2. Push Changes within Submodule folder. This ensures that when others try to pull this updated commit
-from the remote repository, the commit being referenced actually exists on the remote.
+   from the remote repository, the commit being referenced actually exists on the remote.
 
    ```sh
    yatte/yatte_app$ git push
    ```
 
 3. Commit changes from the Super Project folder. This doesn't commit the files in the Submodules, it
-merely updates the specific commit being referenced in the Submodule listing.
+   merely updates the specific commit being referenced in the Submodule listing.
 
    ```sh
    yatte$ git add yatte_app
